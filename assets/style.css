@@ -1,0 +1,38 @@
+ul li {
+    list-style-type: none;
+    font-size: 20px;
+    position: relative;
+}
+ul li::before{
+    content: '';
+position: absolute;
+background-image: url(/assets/checked.jpeg);
+background-position: center;
+background-size: cover;
+width: 30px;
+height: 30px;
+border-radius: 50%;
+left: -35px;
+top: -3px;
+}
+ul li.checked::before{
+    color: #555;
+    
+}
+ul li.checked{
+    color: #555;
+text-decoration: line-through;
+}
+span{
+    position: absolute;
+    right: 75%;
+    font-size: 24px;
+bottom: 0;
+width: 20px;
+height: 20px;
+text-align: center;
+}
+span:hover{
+    background-color: purple;
+
+}
